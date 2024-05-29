@@ -61,8 +61,29 @@ h1{
     .bannerWrapper .bannerContent p {
         font-size: 1rem;
     }
+    .bannerWrapper .bannerContent {
+        transform: translate(-30%, 30%);
+        left: 40%;
+        bottom: 0;
+    }
     h1 {
         font-size: 1.75rem;
+        span {
+            left: 33%;
+        }
+    }
+    .itsMe {
+        height:40vh;
+        background-position: top right;
+    }
+    .toggler {
+        margin: 10px;
+    }
+    header .logo {
+        width: 35px;
+        height: 35px;
+        margin: 10px;
     }
 }
+
 

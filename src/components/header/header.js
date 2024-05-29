@@ -1,19 +1,19 @@
 import "./header.scss";
 import women from "/Users/apple/Desktop/my-portfolio/src/images/woman.png";
-const toggleBtn = document.querySelector(".toggler");
-const menuPanel = document.querySelector(".menu");
+
 const menuItem = ["About-me", "Technical", "Projects", "Contact"];
 
-toggleBtn.addEventListener("click", () => {
-  toggleBtn.classList.toggle("active");
-  if (toggleBtn.classList.contains("active")) {
-    menuPanel.style.display = "block";
-  } else {
-    menuPanel.style.display = "none";
-  }
-});
-
 function Header() {
+  const show = () => {
+    const toggleBtn = document.querySelector(".toggler");
+    const menuPanel = document.querySelector(".menu");
+    toggleBtn.classList.toggle("active");
+    if (toggleBtn.classList.contains("active")) {
+      menuPanel.style.display = "block";
+    } else {
+      menuPanel.style.display = "none";
+    }
+  };
   return (
     <header>
       <div className="logo">
@@ -21,7 +21,8 @@ function Header() {
           <img src={women} alt="" />
         </a>
       </div>
-      <div className="toggler">
+
+      <div className="toggler" onClick={show}>
         <span className="humberger-icon"></span>
       </div>
       <div className="menu">
