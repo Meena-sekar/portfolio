@@ -24,6 +24,9 @@
     padding: 4rem 0 2rem;
     background-color: rgb(33, 37, 41);
 }
+.carousel-control-next, .carousel-control-prev {
+    z-index: 0;
+}
 
 .carousel-inner {
     width: 75%;

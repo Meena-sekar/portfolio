@@ -84,6 +84,21 @@
     padding: 3rem 0;
 }
 
+.cvBtn {
+    background: #3e7ab8;
+    padding: 20px 60px;
+    border-radius: 40px;
+    color: #fff;
+    min-width: 200px;
+    display: inline-block;
+    font-weight: bold;
+    font-size: 1.5rem;
+    transition: .25s ease-in-out;
+    &:hover {
+        padding: 20px 100px;
+    }
+}
+
 @media screen and (max-width: 767px) {
     .container {
         padding: 1rem 0 2rem;

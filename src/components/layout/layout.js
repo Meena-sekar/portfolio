@@ -33,6 +33,12 @@ function About() {
         With a positive attitude and a growth mindset, I am ready to make a
         meaningful contribution and achieve great things
       </p>
+      <a
+        href="https://drive.google.com/file/d/1JUNI2BE27HNy9sUKEIct9FiLs4Ks-xQD/view?usp=sharing"
+        className="cvBtn"
+      >
+        View MY CV
+      </a>
     </div>
   );
 }
