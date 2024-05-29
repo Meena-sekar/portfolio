@@ -83,3 +83,19 @@
     margin: 0 auto;
     padding: 3rem 0;
 }
+
+@media screen and (max-width: 767px) {
+    .container {
+        padding: 1rem 0 2rem;
+    }
+    .heading-main {
+        font-size: 1.5rem;
+    }
+    .heading-sub {
+        font-size: 1rem;
+        max-width: 85%;
+    }
+    .role {
+        font-size: 20px;
+    }
+}

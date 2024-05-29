@@ -97,5 +97,41 @@ header {
         }
     }
 }
+@mixin bg-image($background-image, $bg-position, $bg-size, $bg-repeat) {
+    background-image: $background-image;
+    background-position: $bg-position;
+    background-size: $bg-size; 
+    background-repeat: $bg-repeat;
+}
+
+.toggler {
+    cursor: pointer;
+    .humberger-icon {
+        @include bg-image(url(../header/icon-hamburger.svg), top center, contain, no-repeat);
+        display: inline-block;
+        width: 25px;
+        height: 20px;
+        position: relative;
+        z-index: 4;
+    }
+    &.active {
+        .humberger-icon {
+            @include bg-image(url(../header/icon-close.svg), top center, contain, no-repeat);
+        }
+    }
+}
+
+.close-icon {
+    display: none;
+    position: relative;
+    z-index: 2;
+}
 
 
+@media screen and (max-width: 767px) {
+    .menu-list {
+        display: flex;
+        flex-direction: column;
+    }
+    
+}

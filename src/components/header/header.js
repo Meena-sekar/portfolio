@@ -1,7 +1,17 @@
 import "./header.scss";
 import women from "/Users/apple/Desktop/my-portfolio/src/images/woman.png";
-
+const toggleBtn = document.querySelector(".toggler");
+const menuPanel = document.querySelector(".menu");
 const menuItem = ["About-me", "Technical", "Projects", "Contact"];
+
+toggleBtn.addEventListener("click", () => {
+  toggleBtn.classList.toggle("active");
+  if (toggleBtn.classList.contains("active")) {
+    menuPanel.style.display = "block";
+  } else {
+    menuPanel.style.display = "none";
+  }
+});
 
 function Header() {
   return (

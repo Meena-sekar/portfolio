@@ -57,3 +57,12 @@ h1{
     
 }
 
+@media screen and (max-width:767px) {
+    .bannerWrapper .bannerContent p {
+        font-size: 1rem;
+    }
+    h1 {
+        font-size: 1.75rem;
+    }
+}
+
