@@ -17,7 +17,7 @@ function Header() {
   return (
     <header>
       <div className="logo">
-        <a href="https://anywhere.epam.com/en/blog/front-end-developer-portfolio">
+        <a href="#home">
           <img src={women} alt="" />
         </a>
       </div>

@@ -7,7 +7,7 @@ const myName = {
 
 function Banner() {
   return (
-    <div className="bannerWrapper">
+    <div className="bannerWrapper" id="home">
       <div className="itsMe"></div>
       <div className="bannerContent">
         <h1 className="name">
